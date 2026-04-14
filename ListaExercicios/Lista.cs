@@ -161,49 +161,18 @@ namespace ListaExercicios
               f) Escreva um método que troque as chaves entre os nós da seguinte maneira: o primeiro receberá a
               chave do segundo, o segundo receberá a do terceiro e assim sucessivamente, até que o último
               receba a chave do primeiro.
-             */
-            /*
-            ult = prim;
-            NoLista aux = ult;
-            prim.prox = null;
-
-            while(aux != null)
-            {
-                aux = aux.prox;
-            }
-            */
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-              
+             */    
+                 
             NoLista aux = prim;
-                int chaveAux = aux.chave;
-                while (aux != ult)
-                {
-                    aux.chave = aux.prox.chave;
-                    aux = aux.prox;
-                }
-                ult.chave = chaveAux;
-                ult.prox = null;
-
+            int chaveAux = aux.chave;
+            while (aux != ult)
+            {
+               aux.chave = aux.prox.chave;
+               aux = aux.prox;
+            }
+            ult.chave = chaveAux;
+            ult.prox = null;
             
         }
-
-
     }
 }
