@@ -85,7 +85,7 @@ namespace ListaExercicios
             while (aux != null)
             {
                 cont++;
-                media = aux.chave;
+                media += aux.chave;
                 aux = aux.prox;
             }
             return (double)media / cont;
